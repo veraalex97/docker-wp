@@ -1,0 +1,37 @@
+db:
+  image: mariadb
+  environment:
+    MYSQL_DATABASE: wordpress
+    MYSQL_USER: root
+    MYSQL_ROOT_PASSWORD: wordpress
+  volumes:
+    - ./docker/db:/tmp/mysql
+
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  environment:
+   - PMA_ARBITRARY=1
+  restart: always
+  links:
+    - db
+  ports:
+   - 9001:80
+
+php:
+  build: ./docker/php
+  links:
+    - db
+  volumes:
+    - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+    - ./:/var/www/html:rw
+
+web:
+  image: nginx
+  volumes:
+    - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    - ./docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+    - ./:/var/www/html:rw
+  ports:
+    - "9999:80"
+  links:
+    - php
