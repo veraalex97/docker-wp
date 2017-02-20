@@ -1,2 +1,2 @@
-## Develop your WordPress project on without bloating your dev system.
-### It's time for some Docker. 
+## Develop in WordPress without bloating your local environment.
+### It's time for some Docker.
