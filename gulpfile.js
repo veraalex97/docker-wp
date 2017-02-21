@@ -1,10 +1,17 @@
-var gulp  = require('gulp'),
-    shell = require('gulp-shell');
+// var gulp  = require('gulp'),
+//     shell = require('gulp-shell');
+//
+// gulp.task('export', shell.task([
+//     'sh scripts/db-export.sh'
+// ]));
+//
+// gulp.task('import', shell.task([
+//     'sh scripts/db-import.sh'
+// ]));
 
-gulp.task('export', shell.task([
-    'sh scripts/db-export.sh'
-]));
+gulp = require("gulp");
 
-gulp.task('import', shell.task([
-    'sh scripts/db-import.sh'
-]));
+require('require-dir')("gulp/tasks/", {recurvise:true});
+
+gulp.task('export', ['export-db']);
+gulp.task('import', ['import-db']);
