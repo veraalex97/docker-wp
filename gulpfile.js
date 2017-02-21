@@ -15,3 +15,9 @@ require('require-dir')("gulp/tasks/", {recurvise:true});
 
 gulp.task('export', ['export-db']);
 gulp.task('import', ['import-db']);
+gulp.task('serve', ['browserSync'], function() {
+  gulp.watch('wp-content/plugins/**/*.php', browserSync.reload);
+  gulp.watch('wp-content/themes/**/*.php', browserSync.reload);
+  gulp.watch('wp-content/themes/**/*.js', browserSync.reload);
+  gulp.watch('wp-content/themes/**/*.css', browserSync.reload);
+});
