@@ -4,6 +4,5 @@
 
 ## Todo
 <ul>
-  <li>Use GulpJS to enhance.</li>
-  <li>Make better documentation...</li>
+<li>Write Doc</li>
 </ul>
