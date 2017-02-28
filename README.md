@@ -112,7 +112,7 @@ Our services are running. Cool.. but we can do cooler things with our friend Nod
 
 You can close the browser if you'd like.
 
-<p>The GulpJS tasks I wrote, let's you and your team export and import the database at will and work on plugins and themes without having to refresh the browser</p>
+<p>The GulpJS tasks let's you and your team export and import the database at will and work on plugins and themes without having to refresh the browser</p>
 
 While docker is still running, let's run the browser-sync server.
 
