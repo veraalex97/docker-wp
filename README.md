@@ -14,6 +14,7 @@
   ```
 
 <p>For Linux (Ubuntu)</p>
+<p>Remember to not include the "$"</p>  
 
 Step 1: Dependencies to set up the repository
 
@@ -57,3 +58,16 @@ $ sudo apt-get update && sudo apt-get -y install docker-engine
 ``` 
 
 <p>Now let's download NodeJS</p>
+
+For Mac and Windows
+```bash
+  https://nodejs.org/en/
+```
+
+For Linux (Ubuntu)
+```bash
+$ sudo apt-get install update && sudo apt-get install nodejs && sudo apt-get install npm
+```
+
+<h4>Now let's get to the fun part</h4>
+
