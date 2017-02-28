@@ -89,10 +89,59 @@ $ npm install -g browser-sync
 
 Now, once you download this repo and are in the folder run the following:
 
-This will pull (install) the latest images on the services in the docker-compose.yml file
+This will pull (install) the latest images for the services specified in the docker-compose.yml file
 ```bash
 $ docker-compose pull
 ```
 
 <h3>Now let's run this damn thing</h3>
 
+This part will be pretty straight forward,
+Let's first run our containers which hold our services
+This will take a minute on the first run, please be patient.
+
+```bash
+$ docker-compose up
+```
+
+Now browse to `localhost:9999` for the wordpress installation.
+You can also visit `localhost:9001` to check out phpmyadmin.
+
+But, that's not all.
+Our services are running. Cool.. but we can do cooler things with our friend NodeJS and the tasks I've written.
+
+You can close the browser if you'd like.
+
+<p>The GulpJS tasks I wrote, let's you and your team export and import the database at will and work on plugins and themes without having to refresh the browser</p>
+
+While docker is still running, let's run the browser-sync server.
+
+This will run a hot-reloading server and open a browser for you automatically on your new WordPress install.
+```bash
+$ gulp serve
+```
+
+You can now visit `localhost:3000` if a new browser wasn't opened automatically.
+
+<br>
+
+Pretty cool eh?
+
+The last useful thing we can do now is export and import the database freely without using plugins or doing it manually through phpmyadmin.
+
+Let's export
+```bash
+$ gulp export
+```
+
+Easy right?
+Now, let's import.
+
+```bash
+$ gulp import
+```
+
+Now, you and your team can work on the same WordPress project.
+All you have to do is export before pushing the docker container to GitHub or your preferred versioning system. (I don't judge, I sometimes use mercurial too).
+
+<h2>to-do</h2>
