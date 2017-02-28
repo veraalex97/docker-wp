@@ -71,3 +71,28 @@ $ sudo apt-get install update && sudo apt-get install nodejs && sudo apt-get ins
 
 <h4>Now let's get to the fun part</h4>
 
+Let's install some of our dependencies (don't get confused, we're going to be doing docker and node commands at once)
+
+Let's install the node depencies first:
+
+GulpJS (if on Linux, sudo)
+
+```bash
+$ npm install -g gulp
+```
+
+Browser-Sync
+
+```bash
+$ npm install -g browser-sync
+```
+
+Now, once you download this repo and are in the folder run the following:
+
+This will pull (install) the latest images on the services in the docker-compose.yml file
+```bash
+$ docker-compose pull
+```
+
+<h3>Now let's run this damn thing</h3>
+
