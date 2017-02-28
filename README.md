@@ -52,7 +52,7 @@ $ sudo add-apt-repository \
 
 Step 4: Install
 
-``bash
+```bash
 $ sudo apt-get update && sudo apt-get -y install docker-engine
 ``` 
 
