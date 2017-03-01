@@ -16,7 +16,7 @@
 <p>For Linux (Ubuntu)</p>
 <p>Remember to not include the "$"</p>  
 
-Step 1: Dependencies to set up the repository
+<h3>Step 1:</h3> Dependencies to set up the repository
 
 ```bash
 $ sudo apt-get install -y --no-install-recommends \
@@ -26,7 +26,7 @@ $ sudo apt-get install -y --no-install-recommends \
     software-properties-common
 ```
 
-Step 2: Add Dockers GPG Key
+<h3>Step 2:</h3> Add Dockers GPG Key
 
 ```bash
 $ curl -fsSL https://apt.dockerproject.org/gpg | sudo apt-key add -
@@ -42,7 +42,7 @@ $ apt-key fingerprint 58118E89F3A912897C070ADBF76221572C52609D
   uid                  Docker Release Tool (releasedocker) <docker@docker.com>
 ```
 
-Step 3: Install Repository
+<h3>Step 3:</h3> Install Repository
 
 ```bash
 $ sudo add-apt-repository \
@@ -51,7 +51,7 @@ $ sudo add-apt-repository \
        main"
 ```
 
-Step 4: Install
+<h3>Step 4:</h3> Install
 
 ```bash
 $ sudo apt-get update && sudo apt-get -y install docker-engine
@@ -73,7 +73,7 @@ $ sudo apt-get install update && sudo apt-get install nodejs && sudo apt-get ins
 
 Let's install some of our dependencies (don't get confused, we're going to be doing docker and node commands at once)
 
-Let's install the node depencies first:
+<h3>Let's install the node depencies first:</h3>
 
 GulpJS (if on Linux, sudo)
 
@@ -92,6 +92,11 @@ Now, once you download this repo and are in the folder run the following:
 This will pull (install) the latest images for the services specified in the docker-compose.yml file
 ```bash
 $ docker-compose pull
+```
+
+<b>Lastly, run the wp-download.sh script file. This will download the latest wp to your folder.</b>
+```bash
+$ sh ./wp-download.sh
 ```
 
 <h3>Now let's run this damn thing</h3>
