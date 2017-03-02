@@ -20,14 +20,13 @@
 
 <h3>Step 1:</h3> Dependencies to set up the repository
 
-
 ```bash
 $ sudo apt-get install -y --no-install-recommends \
     apt-transport-https \
     ca-certificates \
     curl \
     software-properties-common
-    ```
+ ```
 
 <h3>Step 2:</h3> Add Dockers GPG Key
 
