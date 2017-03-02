@@ -27,7 +27,7 @@ $ sudo apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
     software-properties-common
-```
+    ```
 
 <h3>Step 2:</h3> Add Dockers GPG Key
 
