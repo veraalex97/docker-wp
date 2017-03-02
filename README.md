@@ -51,13 +51,13 @@ $ sudo add-apt-repository \
        main"
 ```
 
-<h3>Step 4:  Install</h3>
+<h3>Step 4:  Install Docker</h3>
 
 ```bash
 $ sudo apt-get update && sudo apt-get -y install docker-engine
 ``` 
 
-<p>Now let's download NodeJS</p>
+<b>Now let's download NodeJS</b>
 
 For Mac and Windows
 ```bash
@@ -136,14 +136,13 @@ Pretty cool eh?
 
 The last useful thing we can do now is export and import the database freely without using plugins or doing it manually through phpmyadmin.
 
-Let's export
+<b>Let's export</b>
 ```bash
 $ gulp export
 ```
 
 Easy right?
-Now, let's import.
-
+<b>Now, let's import.</b>
 ```bash
 $ gulp import
 ```
