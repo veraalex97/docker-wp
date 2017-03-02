@@ -18,61 +18,6 @@
 <p>For Linux (Ubuntu)</p>
 <p>Remember to not include the "$"</p>  
 
-<h3>Step 1:</h3> Dependencies to set up the repository
-
-```bash
-testing
-```
-
-$ sudo apt-get install -y --no-install-recommends \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-
-<h3>Step 2:</h3> Add Dockers GPG Key
-
-```bash
-$ curl -fsSL https://apt.dockerproject.org/gpg | sudo apt-key add -
-```
-
-Verify that Key
-
-```bash
-$ apt-key fingerprint 58118E89F3A912897C070ADBF76221572C52609D
-
-  pub   4096R/2C52609D 2015-07-14
-        Key fingerprint = 5811 8E89 F3A9 1289 7C07  0ADB F762 2157 2C52 609D
-  uid                  Docker Release Tool (releasedocker) <docker@docker.com>
-```
-
-<h3>Step 3:</h3> Install Repository
-
-```bash
-$ sudo add-apt-repository \
-       "deb https://apt.dockerproject.org/repo/ \
-       ubuntu-$(lsb_release -cs) \
-       main"
-```
-
-<h3>Step 4:</h3> Install
-
-```bash
-$ sudo apt-get update && sudo apt-get -y install docker-engine
-``` 
-
-<p>Now let's download NodeJS</p>
-
-For Mac and Windows
-```bash
-  https://nodejs.org/en/
-```
-
-For Linux (Ubuntu)
-```bash
-$ sudo apt-get install update && sudo apt-get install nodejs && sudo apt-get install npm
-```
-
 <h4>Now let's get to the fun part</h4>
 
 Let's install some of our dependencies (don't get confused, we're going to be doing docker and node commands at once)
