@@ -147,6 +147,7 @@ $ gulp import
 Now, you and your team can work on the same WordPress project.
 All you have to do is export before pushing the docker container to GitHub or your preferred versioning system. (I don't judge, I sometimes use mercurial too).
 
-<h2>to-do</h2>
-* Push through FTP
-* Push through SSH
+###
+to-do:
+- Push through FTP (script)
+- Push through SSH (script)
